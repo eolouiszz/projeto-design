@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arimo', sans-serif; /* Adicionado fallback para a fonte */
+    color: #000000; /* Usar hex ao invés de nome da cor */
+    text-decoration-color: #000000; /* Também em hex */
+    margin: 2px;
+    background-color: #ffffff;
+    line-height: 1.6; /* Melhor legibilidade */
+}
+
+#street {
+    font-size: 19px;
+    margin-left: 30px;
+}
+
+#find {
+    font-size: 120px;
+}
+
+#your {
+    font-size: 120px;
+    margin-left: 150px;
+}
+
+#vibe {
+    font-size: 150px;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    #find {
+        font-size: 150px;
+    }
+
+    #your {
+        font-size: 150px;
+        margin-left: 130px;
+    }
+
+    #vibe {
+        font-size: 150px;
+        margin-left: 160;
+    }
+}
+
+@media (max-width: 900px) {
+    #find {
+        font-size: 130px;
+    }
+
+    #your {
+        font-size: 130px;
+        margin-left: 50px;
+    }
+
+    #vibe {
+        font-size: 160px;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    #find {
+        font-size: 120px;
+    }
+
+    #your {
+        font-size: 120px;
+        margin-left: 40px;
+    }
+
+    #vibe {
+        font-size: 130px;
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 500px) {
+    #find {
+        font-size: 100px;
+    }
+
+    #your {
+        font-size: 100px;
+        margin-left: 40px;
+    }
+
+    #vibe {
+        font-size: 100px;
+        margin-left: 80px;
+    }
+}
+
+#img {
+    position: absolute;
+    top: 0;       /* Alinha ao topo */
+    right: 0;     /* Alinha à direita */
+    height: 190px;
+    width: 190px;
+}
+
+#efeito {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+}
+
+#par {
+    font-size: 30px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%); /* Começa fora da tela à esquerda */
+        opacity: 0;                   /* Começa invisível */
+    }
+    100% {
+        transform: translateX(0);     /* Termina na posição original */
+        opacity: 1;                   /* Fica visível */
+    }
+}
+
+/* Aplica a animação aos elementos desejados */
+#find, #your, #vibe, #street, #img, #efeito, #par {
+    animation: slideInFromLeft 0.8s ease forwards; /* Duração e estilo da animação */
+    opacity: 0; /* Inicia invisível */
+}
+
+#find.show, #your.show, #vibe.show, #street.show, #img.show, #efeito.show, #par.show {
+    opacity: 1; /* Torna visível quando a classe 'show' é adicionada */
+}
