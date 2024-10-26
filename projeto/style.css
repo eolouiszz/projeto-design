@@ -32,7 +32,7 @@ body {
     }
     #vibe {
         font-size: 150px;
-        margin-left: 650px;
+        margin-left: 550px;
     }
 }
 @media (max-width: 1200px) {
@@ -46,7 +46,7 @@ body {
     }
     #vibe {
         font-size: 150px;
-        margin-left: 450px;
+        margin-left: 400px;
     }
 }
 
@@ -162,6 +162,57 @@ body {
     width: 190px;
 }
 
+#img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 190px;
+    width: 190px;
+}
+
+@media(max-width: 1200px) and (min-width: 2000px) {
+    #img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media(max-width: 1200px) {
+    #img {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 900px) {
+    #img {
+        height: 190px;
+        width: 190px;
+    }
+}
+
+@media (max-width: 600px) {
+    #img {
+        height: 180px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 400px) {
+    #img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 300px) {
+    #img {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+
 #efeito {
     position: absolute;
     top: 0;
@@ -190,5 +241,6 @@ body {
 #find.show, #your.show, #vibe.show, #street.show, #img.show, #efeito.show, #par.show {
     opacity: 1; /* Torna visível quando a classe 'show' é adicionada */
 }
+
 
 
