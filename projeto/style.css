@@ -2,219 +2,165 @@ body {
     font-family: 'Arimo', sans-serif; /* Adicionado fallback para a fonte */
     color: #000000; /* Usar hex ao invés de nome da cor */
     text-decoration-color: #000000; /* Também em hex */
-    margin: 2px;
+    margin: 4px;
     background-color: #ffffff;
-    line-height: 1.6; /* Melhor legibilidade */
+    line-height: 1.0; /* Melhor legibilidade */
 }
-
 #street {
     font-size: 19px;
     margin-left: 30px;
-    opacity: 0.85;
 }
-
 #find {
     font-size: 120px;
-    opacity: 0.85;
 }
-
 #your {
     font-size: 120px;
     margin-left: 150px;
-    opacity: 0.85;
 }
-
 #vibe {
     font-size: 150px;
-    opacity: 0.85;
 }
 
-@media (max-width: 1500px) {
+@media (min-width: 1200px) and (max-width: 2000px) {
     #find {
         font-size: 150px;
         margin-left: 300px;
     }
-
     #your {
         font-size: 150px;
-        margin-left: 400px;
+        margin-left: 390px;
     }
-
     #vibe {
         font-size: 150px;
-        margin-left: 550px;
+        margin-left: 650px;
     }
 }
-
-
-/* Media Queries */
 @media (max-width: 1200px) {
     #find {
         font-size: 150px;
-        margin-left: 200px;
+        margin-left: 300px;
     }
-
     #your {
         font-size: 150px;
-        margin-left: 130px;
+        margin-left: 390px;
     }
-
     #vibe {
         font-size: 150px;
-        margin-left: 160;
+        margin-left: 450px;
+    }
+}
+
+@media (max-width: 1100px) {
+    #find {
+        font-size: 140px;
+        margin-left: 240px;
+    }
+    #your {
+        font-size: 140px;
+        margin-left: 300px;
+    }
+    #vibe {
+        font-size: 140px;
+        margin-left: 360px;
     }
 }
 
 @media (max-width: 1000px) {
     #find {
-        font-size: 110px;
-        margin-left: 250px;
+        font-size: 130px;
+        margin-left: 40px;
     }
-
     #your {
-        font-size: 110px;
-        margin-left: 180px;
+        font-size: 130px;
+        margin-left: 70px;
     }
-
     #vibe {
-        font-size: 120px;
-        margin-left: 280px;
+        font-size: 130px;
+        margin-left: 100px;
     }
 }
 
 @media (max-width: 900px) {
     #find {
-        font-size: 110px;
-        margin-left: 130px;
+        font-size: 130px;
+        margin-left: 100px;
     }
-
     #your {
-        font-size: 110px;
-        margin-left: 190px;
+        font-size: 130px;
+        margin-left: 200px;
     }
+    #vibe {
+        font-size: 160px;
+        margin-left: 320px;
+    }
+}
 
+@media (max-width: 800px) {
+    #find {
+        font-size: 120px;
+        margin-left: 80px;
+    }
+    #your {
+        font-size: 120px;
+        margin-left: 150px;
+    }
     #vibe {
         font-size: 120px;
-        margin-left: 290px;
+        margin-left: 250px;
     }
 }
 
 @media (max-width: 700px) {
     #find {
-        font-size: 100px;
-        margin-left: 90px;
+        font-size: 110px;
+        margin-left: 60px;
     }
-
     #your {
-        font-size: 100px;
-        margin-left: 150px;
+        font-size: 110px;
+        margin-left: 120px;
     }
-
     #vibe {
-        font-size: 100px;
-        margin-left: 270px;
+        font-size: 110px;
+        margin-left: 250px;
     }
 }
 
 @media (max-width: 600px) {
     #find {
         font-size: 100px;
-        margin-left: 60px;
     }
-
     #your {
         font-size: 100px;
-        margin-left: 100px;
+        margin-left: 80px;
     }
-
     #vibe {
-        font-size: 100px;
-        margin-left: 200px;
+        font-size: 110px;
+        margin-left: 160px;
     }
 }
 
 @media (max-width: 500px) {
     #find {
         font-size: 100px;
-        margin-left: 50px;
     }
-
     #your {
         font-size: 100px;
-        margin-left: 90px;
+        margin-left: 60px;
     }
-
     #vibe {
         font-size: 100px;
-        margin-left: 180px;
+        margin-left: 140px;
     }
 }
 
+/* Imagem */
 #img {
     position: absolute;
-    top: 0;       /* Alinha ao topo */
-    right: 0;     /* Alinha à direita */
-    height: 200px;
-    width: 200px;
+    top: 0;
+    right: 0;
+    height: 190px;
+    width: 190px;
 }
-
-@media (max-width: 1500px) {
-    #img {
-        height: 280px;
-        width: 280px;
-    }
-}
-
-/* Para telas de até 1200px */
-@media (max-width: 1200px) {
-    #img {
-        height: 280px;
-        width: 280px;
-    }
-}
-
-/* Para telas de até 1000px */
-@media (max-width: 1000px) {
-    #img {
-        height: 290px;
-        width: 290px;
-    }
-}
-
-/* Para telas de até 800px */
-@media (max-width: 800px) {
-    #img {
-        height: 200px;
-        width: 200px;
-    }
-}
-
-/* Para telas de até 600px */
-@media (max-width: 600px) {
-    #img {
-        height: 180px;
-        width: 180px;
-    }
-}
-
-/* Para telas de até 400px */
-@media (max-width: 400px) {
-    #img {
-        height: 120px;
-        width: 120px;
-    }
-}
-
-/* Para telas de até 300px */
-@media (max-width: 300px) {
-    #img {
-        height: 130px;
-        width: 130px;
-    }
-}
-
-
-
 
 #efeito {
     position: absolute;
@@ -223,15 +169,12 @@ body {
     height: 30px;
     width: 30px;
 }
-
 #par {
     font-size: 30px;
-    opacity: 1;
 }
-
 @keyframes slideInFromLeft {
     0% {
-        transform: translateX(-230%); /* Começa fora da tela à esquerda */
+        transform: translateX(-250%); /* Começa fora da tela à esquerda */
         opacity: 0;                   /* Começa invisível */
     }
     100% {
@@ -239,13 +182,13 @@ body {
         opacity: 1;                   /* Fica visível */
     }
 }
-
 /* Aplica a animação aos elementos desejados */
 #find, #your, #vibe, #street, #img, #efeito, #par {
     animation: slideInFromLeft 1s ease forwards; /* Duração e estilo da animação */
     opacity: 0; /* Inicia invisível */
 }
-
 #find.show, #your.show, #vibe.show, #street.show, #img.show, #efeito.show, #par.show {
-    opacity: 0.60; /* Torna visível quando a classe 'show' é adicionada */
+    opacity: 1; /* Torna visível quando a classe 'show' é adicionada */
 }
+
+
